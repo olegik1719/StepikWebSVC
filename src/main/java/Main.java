@@ -13,6 +13,7 @@ public class Main {
         context.addServlet(new ServletHolder(frontend), "/authform");
         context.addServlet(new ServletHolder(mirror), "/mirror");
         server.start();
+        java.util.logging.Logger.getGlobal().info("Server started");
         server.join();
     }
 }
